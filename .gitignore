@@ -1,0 +1,7 @@
+*.tfstate
+*.zip
+
+#Had to hardcode sensitive values for the remote backend configuration.
+providers.tf
+.terraform*
+*.backup
