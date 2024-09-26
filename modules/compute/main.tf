@@ -6,7 +6,7 @@ resource "aws_lambda_function" "logging_lambda" {
   runtime = "python3.12"
   timeout = "25"
    /*
-  because the default timeout is set to 3 seconds and i need to fetch 
+  because the default timeout is set to 3 seconds and i need to fetch the
   data from github API and also write logs to s3 bucket i need to extend the timeout.
   */
   #s3_bucket = "lambda-check-point-ravidshlomian"                           #lambda bucket specification for version control 
